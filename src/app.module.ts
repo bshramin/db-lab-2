@@ -9,6 +9,7 @@ import GenreModule from './Genre/genre.module';
 import BookEntity from './db/entity/book.entity';
 import GenreEntity from './db/entity/genre.entity';
 import { HelloModule } from './hello/hello.module';
+import JobseekersModule from './jobseekers/jobseekers.module';
 
 @Module({
   imports: [
@@ -16,6 +17,7 @@ import { HelloModule } from './hello/hello.module';
     BooksModule,
     GenreModule,
     HelloModule,
+    JobseekersModule,
     TypeOrmModule.forFeature(
       [UserEntity, BookEntity , GenreEntity],
     ),
